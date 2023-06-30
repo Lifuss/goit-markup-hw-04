@@ -402,17 +402,18 @@ p {
 .clients-icon {
   fill: currentColor;
 }
+
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--hover-color);
-  fill: var(--hover-color);
+  color: var(--hover-color);
 }
-.clients-link:hover .clients-icon {
+/* .clients-link:hover .clients-icon {
   fill: var(--hover-color);
 }
 .clients-link:focus .clients-icon {
   fill: var(--hover-color);
-}
+} */
 /* .clients-link:active {
   background-color: var(--hover-color);
 } */
