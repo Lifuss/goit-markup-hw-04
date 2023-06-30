@@ -6,6 +6,9 @@
   --color-on-blue-theme: #ffffff;
   --background-color: #f4f4fd;
   --cornflower: #e7e9fc;
+  --light-mode-bg: #f4f4fd;
+  --clients-color: #8e8f99;
+  --success-color: #31d0aa;
 }
 
 body {
@@ -169,6 +172,14 @@ p {
   text-align: center;
 
   background-color: var(--primiry-color-navy);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/bg-image/people-office.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 
   padding-top: 188px;
   padding-bottom: 188px;
@@ -205,7 +216,6 @@ p {
   background: var(--specialy-color);
   color: var(--color-on-blue-theme);
   border-radius: 4px;
-  background: var(--iris, #4d5ae5);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
   margin: 0 auto;
@@ -227,6 +237,16 @@ p {
 .features-list-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
+.box-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 112px;
+  background: var(--light-mode-bg);
+
+  margin-bottom: 8px;
+}
+
 .features-title {
   font-weight: 500;
   font-size: 20px;
@@ -275,6 +295,9 @@ p {
 .team-cards-list-item {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--color-on-blue-theme);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .team-cards-name {
   font-weight: 500;
@@ -298,14 +321,83 @@ p {
   color: var(--secondary-text-color);
 
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 8px;
 }
 
 .team-cards-desc {
   padding: 32px 16px;
 }
+
+.socials {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+.social-items {
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--specialy-color);
+  border-radius: 50%;
+}
+.social-icons {
+  fill: var(--light-mode-bg);
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--hover-color);
+}
 /* ==================/OUR TEAM================== */
 
+/**
+  |============================
+  | Clients
+  |============================
+*/
+.clients {
+}
+.clients-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-align: center;
+  margin-bottom: 72px;
+
+  color: var(--primiry-color-navy);
+}
+.clients-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.clients-item {
+}
+.clients-link {
+  display: flex;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  justify-content: center;
+  align-items: center;
+  color: var(--clients-color);
+}
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--hover-color);
+}
+.clients-icon {
+  fill: currentColor;
+}
+.clients-link:hover .clients-icon {
+  fill: var(--hover-color);
+}
 /* ==================FOOTER================== */
 .footer-text {
   width: 264px;
@@ -316,6 +408,10 @@ p {
 
   color: var(--background-color);
 }
+.footer-box {
+  display: flex;
+  gap: 120px;
+}
 .logo-link.margin {
   display: inline-block;
   margin-bottom: 16px;
@@ -325,6 +421,22 @@ p {
   background-color: var(--primiry-color-navy);
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.social-title {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
+
+  color: var(--color-on-blue-theme);
+}
+.footer-list {
+  gap: 12px;
+}
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--success-color);
 }
 /* ==================/FOOTER================== */
 
