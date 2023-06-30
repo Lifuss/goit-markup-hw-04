@@ -408,20 +408,6 @@ p {
   border-color: var(--hover-color);
   color: var(--hover-color);
 }
-/* .clients-link:hover .clients-icon {
-  fill: var(--hover-color);
-}
-.clients-link:focus .clients-icon {
-  fill: var(--hover-color);
-} */
-/* .clients-link:active {
-  background-color: var(--hover-color);
-} */
-
-/* .clients-icon:hover,
-.clients-icon:focus {
-  fill: var(--hover-color);
-} */
 
 /* ==================FOOTER================== */
 .footer-text {
