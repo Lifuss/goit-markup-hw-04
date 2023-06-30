@@ -399,17 +399,18 @@ p {
   color: var(--clients-color);
   height: 100%;
 }
+.clients-icon {
+  fill: currentColor;
+}
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--hover-color);
   fill: var(--hover-color);
 }
-.clients-link:active {
+/* .clients-link:active {
   background-color: var(--hover-color);
-}
-.clients-icon {
-  fill: currentColor;
-}
+} */
+
 .clients-icon:hover,
 .clients-icon:focus {
   fill: var(--hover-color);
