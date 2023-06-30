@@ -107,9 +107,14 @@ p {
 }
 .page-header {
   border-bottom: 1px solid var(--cornflower);
-  background: var(--white, #fff);
+  background: var(--color-on-blue-theme);
   padding: 0;
+
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
+
 .menu {
   display: flex;
   gap: 40px;
@@ -170,6 +175,8 @@ p {
 /* ==================HERO================== */
 .hero {
   text-align: center;
+  max-width: 1440px;
+  margin: 0 auto;
 
   background-color: var(--primiry-color-navy);
   background-image: linear-gradient(
@@ -177,7 +184,7 @@ p {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/bg-image/people-office.jpg);
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
@@ -243,6 +250,7 @@ p {
   align-items: center;
   min-height: 112px;
   background: var(--light-mode-bg);
+  border-radius: 4px;
 
   margin-bottom: 8px;
 }
@@ -378,6 +386,9 @@ p {
   align-items: center;
 }
 .clients-item {
+  width: calc(100% - (24 * 5) / 6);
+  /* width: ((100% - 120px) / 6); */
+  height: 88px;
 }
 .clients-link {
   display: flex;
