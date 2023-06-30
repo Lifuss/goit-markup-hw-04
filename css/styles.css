@@ -402,6 +402,10 @@ p {
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--hover-color);
+  fill: var(--hover-color);
+}
+.clients-link:active {
+  background-color: var(--hover-color);
 }
 .clients-icon {
   fill: currentColor;
