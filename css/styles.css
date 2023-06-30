@@ -383,7 +383,7 @@ p {
   display: flex;
   padding: 16px 32px;
   border-radius: 4px;
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--clients-color);
   justify-content: center;
   align-items: center;
   color: var(--clients-color);
@@ -393,7 +393,7 @@ p {
   border-color: var(--hover-color);
 }
 .clients-icon {
-  fill: currentColor;
+  fill: var(--clients-color);
 }
 .clients-link:hover .clients-icon {
   fill: var(--hover-color);
